@@ -1,0 +1,8 @@
+/* Cosmo
+ * Bootswatch
+ *= require_self
+ *= require jquery-ui
+ *= require bootstrap-datepicker
+ *= require cosmo/loader
+ *= require cosmo/bootswatch
+*/

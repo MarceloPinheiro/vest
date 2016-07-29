@@ -1,0 +1,8 @@
+/* Yeti
+ * Bootswatch
+ *= require_self
+ *= require jquery-ui
+ *= require bootstrap-datepicker
+ *= require yeti/loader
+ *= require yeti/bootswatch
+*/

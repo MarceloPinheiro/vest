@@ -1,0 +1,32 @@
+<%= form_for @vestibulare, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="form-group">
+    <%= f.label :descricao, :class => 'control-label' %>
+    <%= f.text_field :descricao, :class => 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :inicio, :class => 'control-label' %>
+    <%= f.datetime_select :inicio, :class => 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :fim, :class => 'control-label' %>
+    <%= f.datetime_select :fim, :class => 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :prazoboleto, :class => 'control-label' %>
+    <%= f.date_select :prazoboleto, :class => 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :prova, :class => 'control-label' %>
+    <%= f.datetime_select :prova, :class => 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :status, :class => 'control-label' %>
+    <%= f.number_field :status, :class => 'form-control' %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                vestibulares_path, :class => 'btn' %>
+  </div>
+<% end %>
